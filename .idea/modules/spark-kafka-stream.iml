@@ -12,5 +12,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.6:jar" level="project" />
+    <orderEntry type="library" name="org.apache.spark:spark-streaming_2.12:3.1.2" level="project" />
+    <orderEntry type="library" name="org.apache.spark:spark-streaming-kafka-0-10_2.12:3.1.2" level="project" />
+    <orderEntry type="library" name="org.apache.spark:spark-core_2.12:3.1.2" level="project" />
   </component>
 </module>

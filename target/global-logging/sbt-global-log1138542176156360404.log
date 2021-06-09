@@ -1,0 +1,49 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec({file:/Users/mahesh/play/spark/spark-kafka-stream/}spark-kafka-stream/run, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/mahesh/play/spark/spark-kafka-stream/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.13' for Scala 2.13.6. Compiling...[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 5.739s.[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:3:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.kafka.clients.consumer.ConsumerRecord[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:4:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.kafka.common.serialization.StringDeserializer[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:5:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.SparkConf[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:6:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, LocationStrategies}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:7:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.streaming.{Seconds, StreamingContext}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:14:20: not found: type SparkConf[0m
+[0m[[0m[31merror[0m] [0m[0m    val conf = new SparkConf().setAppName("SparkKafkaStreaming")[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:15:19: not found: type StreamingContext[0m
+[0m[[0m[31merror[0m] [0m[0m    val ssc = new StreamingContext(conf,Seconds(15))[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:15:41: not found: value Seconds[0m
+[0m[[0m[31merror[0m] [0m[0m    val ssc = new StreamingContext(conf,Seconds(15))[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:21:37: not found: type StringDeserializer[0m
+[0m[[0m[31merror[0m] [0m[0m      "key.deserializer" -> classOf[StringDeserializer],[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:22:39: not found: type StringDeserializer[0m
+[0m[[0m[31merror[0m] [0m[0m      "value.deserializer" -> classOf[StringDeserializer],[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:29:18: not found: value KafkaUtils[0m
+[0m[[0m[31merror[0m] [0m[0m    val stream = KafkaUtils.createDirectStream[String, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:31:7: not found: value LocationStrategies[0m
+[0m[[0m[31merror[0m] [0m[0m      LocationStrategies.PreferConsistent,[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:32:7: not found: value ConsumerStrategies[0m
+[0m[[0m[31merror[0m] [0m[0m      ConsumerStrategies.Subscribe[String, String](topics, kafkaParams)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m13 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 8 s, completed 9 Jun 2021, 12:30:21 pm[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

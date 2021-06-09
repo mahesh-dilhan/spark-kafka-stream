@@ -1,0 +1,39 @@
+[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /Users/mahesh/play/spark/spark-kafka-stream/project/target/.sbt-compilation-infos/spark-kafka-stream-compile/.sbt-idea-lock ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:3:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.kafka.common.serialization.StringDeserializer[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:4:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.SparkConf[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:5:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, LocationStrategies}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:6:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.streaming.{Seconds, StreamingContext}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:13:20: not found: type SparkConf[0m
+[0m[[0m[31merror[0m] [0m[0m    val conf = new SparkConf().setAppName("SparkKafkaStreaming")[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:14:19: not found: type StreamingContext[0m
+[0m[[0m[31merror[0m] [0m[0m    val ssc = new StreamingContext(conf,Seconds(15))[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:14:41: not found: value Seconds[0m
+[0m[[0m[31merror[0m] [0m[0m    val ssc = new StreamingContext(conf,Seconds(15))[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:20:37: not found: type StringDeserializer[0m
+[0m[[0m[31merror[0m] [0m[0m      "key.deserializer" -> classOf[StringDeserializer],[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:21:39: not found: type StringDeserializer[0m
+[0m[[0m[31merror[0m] [0m[0m      "value.deserializer" -> classOf[StringDeserializer],[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:28:18: not found: value KafkaUtils[0m
+[0m[[0m[31merror[0m] [0m[0m    val stream = KafkaUtils.createDirectStream[String, String]([0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:30:7: not found: value LocationStrategies[0m
+[0m[[0m[31merror[0m] [0m[0m      LocationStrategies.PreferConsistent,[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mahesh/play/spark/spark-kafka-stream/src/main/scala/SparkKafkaStream.scala:31:7: not found: value ConsumerStrategies[0m
+[0m[[0m[31merror[0m] [0m[0m      ConsumerStrategies.Subscribe[String, String](topics, kafkaParams)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m12 errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /Users/mahesh/play/spark/spark-kafka-stream/project/target/.sbt-compilation-infos/spark-kafka-stream-compile/.sbt-idea-lock.[0m
